@@ -23,12 +23,6 @@ CSS3 – Styling and layout
 
 -> Easy-to-read and well-structured code
 
-📌 Note
-
-This is a frontend-only project
-
-No JavaScript or backend is used
-
 Suitable for beginners learning HTML & CSS
 
 📄 License
