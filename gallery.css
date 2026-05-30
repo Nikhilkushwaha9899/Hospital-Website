@@ -207,8 +207,6 @@ footer {
     padding: 30px;
 }
 
-/* ===== RESPONSIVE STYLES ===== */
-
 #hamburger {
     display: none;
     flex-direction: column;

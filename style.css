@@ -379,9 +379,6 @@ h1 {
     transform: scale(1.1) translateY(-5px);
 }
 
-/* ===== RESPONSIVE STYLES ===== */
-
-/* Hamburger Menu */
 #hamburger {
     display: none;
     flex-direction: column;

@@ -309,8 +309,6 @@ pre {
     text-align: center;
 }
 
-/* ===== RESPONSIVE STYLES ===== */
-
 #hamburger {
     display: none;
     flex-direction: column;
