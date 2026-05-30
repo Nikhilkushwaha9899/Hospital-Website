@@ -4,7 +4,7 @@ MediClub is a static hospital website created to showcase essential hospital-rel
 This project does not include backend functionality or databases.
 
 🛠️ Technologies Used
-
+ 
 HTML5 – Structure of the website
 
 CSS3 – Styling and layout
@@ -22,12 +22,6 @@ CSS3 – Styling and layout
 -> Contact and appointment-related layout (UI only)
 
 -> Easy-to-read and well-structured code
-
-📌 Note
-
-This is a frontend-only project
-
-No JavaScript or backend is used
 
 Suitable for beginners learning HTML & CSS
 
