@@ -11,29 +11,20 @@ body {
     background: linear-gradient(135deg, #003a70, #0055a5, #007bff, #56aeff);
     background-attachment: fixed;
     min-height: 100vh;
+    background-image: url(images/background\ image.jpg);
+    background-size: cover;
 }
 
 #navabar {
     height: 120px;
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0, 58, 112, 0.15);
     position: sticky;
     top: 0;
     z-index: 1000;
-
-}
-
-#image1 {
-    height: 110px;
-    width: 110px;
-    margin: 0 8px -10px 60px;
-    border: none;
-    outline: none;
-    background: transparent;
-    display: block;
 }
 
 #ln {
@@ -95,7 +86,7 @@ body {
     max-width: 560px;
     font-size: 54px;
     font-weight: 800;
-    color: white;
+    color:#003a70;
     line-height: 1.1;
     letter-spacing: -1px;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
@@ -105,7 +96,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.9);
+    color:#000000;
     text-align: left;
     margin: 18px 0 28px;
     letter-spacing: 0.2px;
@@ -237,7 +228,7 @@ h1 {
     font-weight: 800;
     text-align: center;
     margin: 60px 0 30px;
-    color: white;
+    color:#003a70;
     letter-spacing: -0.5px;
     position: relative;
 }
@@ -302,7 +293,7 @@ h1::after {
 #pimage2 p,
 #pimage3 p,
 #pimage4 p {
-    color: white;
+    color: #000000;
     margin-top: 4px;
 }
 
@@ -340,7 +331,7 @@ h1::after {
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     padding: 20px 22px;
-    color: white;
+    color: #000000;
     line-height: 1.7;
     transition: all 0.3s ease;
     cursor: default;
@@ -376,7 +367,7 @@ h1::after {
     font-size: 13px;
     white-space: normal;
     word-break: break-word;
-    color: rgba(255, 255, 255, 0.85);
+    color: #000000;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -544,12 +535,6 @@ footer p,
     #ln {
         font-size: 38px;
         width: auto;
-    }
-
-    #image1 {
-        height: 80px;
-        width: 80px;
-        margin-left: 20px;
     }
 
     #rn {
