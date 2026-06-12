@@ -23,8 +23,6 @@ CSS3 – Styling and layout
 
 -> Easy-to-read and well-structured code
 
-Suitable for beginners learning HTML & CSS
-
 📄 License
 
 This project is open-source and available for educational purposes.
