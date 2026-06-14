@@ -29,6 +29,6 @@ This project is open-source and available for educational purposes.
 
 👨‍⚕️ MediClub
 
-Link - https://hospital-website-ochre.vercel.app/
+Project link - https://mediclub-ochre.vercel.app/
 
 Your health, our priority.
