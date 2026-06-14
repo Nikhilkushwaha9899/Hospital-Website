@@ -9,6 +9,8 @@ HTML5 – Structure of the website
 
 CSS3 – Styling and layout
 
+JS - Animations and submission
+
 ✨ Features
 
 -> Responsive and clean UI design
@@ -23,10 +25,10 @@ CSS3 – Styling and layout
 
 -> Easy-to-read and well-structured code
 
-📄 License
-
 This project is open-source and available for educational purposes.
 
 👨‍⚕️ MediClub
+
+Link - https://hospital-website-ochre.vercel.app/
 
 Your health, our priority.
