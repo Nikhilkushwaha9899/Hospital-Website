@@ -1,214 +1,221 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:'Poppins',sans-serif;
-    min-height:100vh;
-    background:transparent;
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: transparent;
 }
 
-#bg-canvas{
-    position:fixed;
-    inset:0;
-    width:100%;
-    height:100%;
-    z-index:-1;
+#bg-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
-#navabar{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:12px 25px;
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(10px);
-    box-shadow:0 2px 20px rgba(0,58,112,.15);
-    position:sticky;
-    top:0;
-    z-index:1000;
+#navabar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, .08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 58, 112, .15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-#ln{
-    font-size:42px;
-    font-weight:800;
-    color:#003a70;
+#ln {
+    font-size: 42px;
+    font-weight: 800;
+    color: #003a70;
 }
 
-#ln sup{
-    color:#007bff;
-    font-size:22px;
+#ln sup {
+    color: #007bff;
+    font-size: 22px;
 }
 
-#rn{
-    display:flex;
-    gap:8px;
+#rn {
+    display: flex;
+    gap: 8px;
 }
 
-#rn a{
-    text-decoration:none;
-    color:#1a1a2e;
-    font-weight:600;
-    padding:10px 18px;
-    border-radius:30px;
-    transition:.3s;
+#rn a {
+    text-decoration: none;
+    color: #1a1a2e;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 30px;
+    transition: .3s;
 }
 
-#rn a:hover{
-    background:linear-gradient(135deg,#003a70,#007bff);
-    color:white;
+#rn a:hover {
+    background: linear-gradient(135deg, #003a70, #007bff);
+    color: white;
 }
 
-#hamburger{
-    display:none;
-    flex-direction:column;
-    gap:5px;
-    cursor:pointer;
+#hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
 }
 
-#hamburger span{
-    width:26px;
-    height:3px;
-    background:#003a70;
-    border-radius:5px;
+#hamburger span {
+    width: 26px;
+    height: 3px;
+    background: #003a70;
+    border-radius: 5px;
 }
 
 /* Footer */
 
-footer{
-    color:white;
+footer {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 footer h3,
 footer h4,
-footer p{
-    color:white;
+footer p {
+    color: white;
 }
 
-#top_footer{
-    display:flex;
-    justify-content:space-evenly;
-    flex-wrap:wrap;
-    gap:30px;
-    padding:40px 30px;
-    background:linear-gradient(135deg,#0d1f4a,#1e3a8a,#2563eb);
+#top_footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 30px;
+    background: linear-gradient(135deg, #0d1f4a, #1e3a8a, #2563eb);
 }
 
 #social_media,
 #contact,
-#emergency{
-    width:280px;
+#emergency {
+    width: 280px;
 }
 
-#social_media1{
-    display:flex;
-    gap:15px;
-    margin-top:15px;
+#social_media1 {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
 }
 
-#social_media1 a{
-    width:44px;
-    height:44px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    color:white;
-    background:rgba(255,255,255,.15);
-    transition:.3s;
+#social_media1 a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, .15);
+    transition: .3s;
 }
 
-#social_media1 a:hover{
-    background:white;
-    color:#1e3a8a;
+#social_media1 a:hover {
+    background: white;
+    color: #1e3a8a;
 }
 
-#contact1 p{
-    line-height:2;
+#contact1 p {
+    line-height: 2;
 }
 
-#emergency1{
-    margin-top:15px;
-    padding:18px;
-    text-align:center;
-    border-radius:12px;
-    background:linear-gradient(135deg,#dc2626,#ef4444);
-    animation:pulse 2s infinite;
+#emergency1 {
+    margin-top: 15px;
+    padding: 18px;
+    text-align: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+    animation: pulse 2s infinite;
 }
 
-@keyframes pulse{
-    0%,100%{
-        box-shadow:0 0 0 0 rgba(220,38,38,.7);
+@keyframes pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, .7);
     }
-    50%{
-        box-shadow:0 0 0 12px rgba(220,38,38,0);
+
+    50% {
+        box-shadow: 0 0 0 12px rgba(220, 38, 38, 0);
     }
 }
 
-#bottom_footer{
-    background:#0d1f4a;
-    padding:18px;
+#bottom_footer {
+    background: #0d1f4a;
+    padding: 18px;
 }
 
-#bottom_footer1{
-    text-align:center;
-    font-size:13px;
-    line-height:2;
+#bottom_footer1 {
+    text-align: center;
+    font-size: 13px;
+    line-height: 2;
 }
 
 /* Responsive */
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    #navabar{
-        flex-wrap:wrap;
+    #navabar {
+        flex-wrap: wrap;
     }
 
-    #ln{
-        font-size:28px;
+    #ln {
+        font-size: 28px;
     }
 
-    #hamburger{
-        display:flex;
+    #hamburger {
+        display: flex;
     }
 
-    #rn{
-        display:none;
-        flex-direction:column;
-        width:100%;
-        margin-top:10px;
+    #rn {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
     }
 
-    #rn.open{
-        display:flex;
+    #rn.open {
+        display: flex;
     }
 
-    #rn a{
-        width:100%;
-        border-radius:0;
-        padding:12px 20px;
+    #rn a {
+        width: 100%;
+        border-radius: 0;
+        padding: 12px 20px;
     }
 
-    #top_footer{
-        flex-direction:column;
-        padding:25px;
+    #top_footer {
+        flex-direction: column;
+        padding: 25px;
     }
 
     #social_media,
     #contact,
-    #emergency{
-        width:100%;
+    #emergency {
+        width: 100%;
     }
 }
 
-@media(max-width:480px){
+@media(max-width:480px) {
 
-    #ln{
-        font-size:22px;
+    #ln {
+        font-size: 22px;
     }
 }
