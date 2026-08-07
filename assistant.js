@@ -30,21 +30,6 @@ async function handleAsk() {
     }
 }
 
-async function askAssistant(message) {
-    const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message })
-    });
-
-    if (!response.ok) {
-        throw new Error(`Server responded with ${response.status}`);
-    }
-
-    const data = await response.json();
-    return data.reply || "I didn't get a proper response, please try again.";
-}
-
 function addUserMessage(text) {
     const bubble = document.createElement('div');
     bubble.className = 'chat-msg user-msg';
