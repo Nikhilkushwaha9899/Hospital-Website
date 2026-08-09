@@ -40,10 +40,7 @@ body {
 #navabar {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 10px clamp(12px, 4vw, 25px);
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0, 58, 112, .15);
     position: sticky;
@@ -53,17 +50,18 @@ body {
 
 #ln {
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: clamp(20px, 5vw, 42px);
+    font-size: 52px;
+    width: 300px;
     font-weight: 800;
     color: #003a70;
     letter-spacing: -1px;
-    flex-shrink: 0;
 }
 
 #ln sup {
     color: #007bff;
-    font-size: clamp(12px, 2.5vw, 22px);
+    font-size: 28px;
 }
 
 #rn {
@@ -72,18 +70,18 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 4px;
-    flex-wrap: wrap;
+     margin-right: 40px;
 }
 
 #rn a {
     text-decoration: none;
     color: #1a1a2e;
-    font-size: 15px;
+    font-size: 16px;
+    padding: 9px 18px;
     font-weight: 600;
-    padding: 9px 16px;
-    border-radius: 30px;
-    transition: .3s;
-    white-space: nowrap;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border-radius: 50px;
 }
 
 #rn a:hover {
@@ -96,10 +94,11 @@ body {
 #hamburger {
     display: none;
     flex-direction: column;
-    gap: 5px;
     cursor: pointer;
+    gap: 5px;
     padding: 10px;
     margin-left: auto;
+    margin-right: 16px;
 }
 
 #hamburger span {
@@ -108,7 +107,7 @@ body {
     height: 3px;
     background: #003a70;
     border-radius: 3px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
 /* ============================
@@ -386,20 +385,23 @@ footer p,
         display: none;
         flex-direction: column;
         width: 100%;
-        margin-top: 10px;
-        align-items: flex-start;
+        margin: 0;
         background: white;
+        padding: 8px 0;
+        align-items: flex-start;
         border-top: 1px solid #eee;
     }
 
     #rn.open {
         display: flex;
+        background-color: rgba(255, 255, 255, 0.1);
     }
 
     #rn a {
         width: 100%;
         border-radius: 0;
         padding: 12px 20px;
+        border-radius: 0;
     }
 
     #rn a:hover {
