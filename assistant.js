@@ -25,9 +25,24 @@ async function handleAsk() {
         addBotMessage(reply);
     } catch (err) {
         typingEl.remove();
-        addBotMessage("Sorry, I couldn't reach the assistant right now. Please try again in a moment.");
-        console.error('Assistant API error:', err);
+        addBotMessage("Sorry, something went wrong on my end. Please try again.");
+        console.error('Assistant error:', err);
     }
+}
+
+/**
+ * Fully local — uses the rule-based model in assistant-model.js.
+ * No network requests, no API keys. A short delay is added purely
+ * for a natural "typing" feel in the UI.
+ */
+function askAssistant(question) {
+    return new Promise((resolve) => {
+        const thinkTime = 400 + Math.random() * 500;
+        setTimeout(() => {
+            const reply = window.MediclubAssistant.getAssistantReply(question);
+            resolve(reply);
+        }, thinkTime);
+    });
 }
 
 function addUserMessage(text) {
