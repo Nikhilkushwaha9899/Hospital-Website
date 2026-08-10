@@ -377,8 +377,16 @@ footer p,
    ============================ */
 
 @media (max-width: 768px) {
+    #navabar {
+        flex-wrap: wrap;
+        align-items: center;
+    }
     #hamburger {
         display: flex;
+    }
+    #ln {
+        font-size: 26px;
+        flex: 1;
     }
 
     #rn {
@@ -422,5 +430,5 @@ footer p,
     #emergency {
         width: 100%;
         max-width: 320px;
-    }
+    } 
 }
